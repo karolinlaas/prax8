@@ -1,7 +1,19 @@
-let numberInput = document.getElementById('numberInput');
-let numberResult = document.getElementById('numberResult');
+let numInput = document.querySelector('#numInput');
+let factOutput = document.querySelector('#factOutput');
 
-numberInput.addEventListener('input', event => {
-    let nr = event.target.value;
+const getFact = () => {
+    let number = numInput.value;
+        
+    if (number !='')
+        axios.get('http://numbersapi.com/'+number)
+        .then(response => {
+            factOutput.innerText = response.data;
+        })
+        .catch(error => {
+            console.log(error);
+        })
     
-});
+}
+
+numInput.addEventListener('input', getFact);
+                             
