@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    text-align: center;
+    margin-top: 25vh;
+    background-color: aliceblue;
+}
+
+#factOutput ul {
+    margin-top: 20px;
+}
+
+#factOutput li {
+    padding-top: 7px;
+}
+
+input {
+    width: 190px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 4px;
+    margin-bottom: 15px;
+}
